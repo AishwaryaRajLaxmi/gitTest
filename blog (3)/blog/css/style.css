@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --contrast: #222222;
+  --contrast-2: #575760;
+  --contrast-3: #b2b2be;
+  --base: #f0f0f0;
+  --base-2: #f7f8f9;
+  --base-3: #ffffff;
+  --accent: #1e73be;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--base);
+}
+
+/* utility first css */
+.d-flex {
+  display: flex;
+}
+.jcc {
+  justify-content: center;
+}
+
+.jcb {
+  justify-content: space-between;
+}
+
+.aic {
+  align-items: center;
+}
+.b {
+  font-weight: bold;
+}
+.i {
+  font-style: italic;
+}
+
+.header {
+  background-color: var(--base-2);
+  padding: 10px 80px;
+}
+.navbar .brand img {
+  height: 70px;
+}
+
+.navbar .nav {
+  gap: 25px;
+}
+
+.navbar .nav .nav-item {
+  font-weight: 500;
+  color: var(--contrast);
+}
+
+/* Container */
+.container {
+  padding: 10px 50px;
+}
+
+.container .row {
+  gap: 30px;
+}
+
+.container .row .col-9 {
+  flex: 2;
+  /* display: none; */
+}
+
+.container .row .col-3 {
+  flex: 1;
+}
+
+.container .col-9 .card {
+  background-color: var(--base-2);
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.container .col-9 .card img {
+  width: 100%;
+}
+.container .col-9 .card .post-title {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.container .col-9 .card .post-title a {
+  color: var(--contrast);
+}
+.container .col-9 .card .post-pub,
+.container .col-9 .card img,
+.container .col-9 .card .post-desc {
+  margin-bottom: 20px;
+}
+
+.r-1ny4l3l {
+  width: 100% !important;
+}
+
+.container .row .col-3 .card {
+  padding: 40px;
+  background-color: var(--base-2);
+  margin-bottom: 30px;
+}
+
+.row .col-3 .card input[type="text"] {
+  padding: 13px 15px;
+  border: none;
+  outline: none;
+}
+
+.row .col-3 .card button {
+  border: 1px solid var(--base);
+  padding: 13px 15px;
+  margin-left: 8px;
+}
+
+.card button:hover {
+  color: #f0f0f0;
+  background-color: #575760;
+}
+
+.row .col-3 .card h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.row .col-3 .card p {
+  margin: 10px 0;
+}
